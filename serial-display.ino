@@ -11,10 +11,19 @@ The Cuicuit:
  LCD Vcc to +5V
 
  */
+ 
+#include <LiquidCrystal.h>
+// initialize the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+#include "LargeFont.h"
 
 void setup() {
   // initialize serial:
   Serial.begin(9600);
+
+  // sets the LCD's rows and colums:
+  lcd.begin(16, 2);
 }
 
 void loop() {
@@ -22,8 +31,9 @@ void loop() {
   while (Serial.available() > 0) {
 
     // look for the next valid integer in the incoming serial stream:
-    int in = Serial.parseInt();
-    Serial.print("Parsed: ");
-    Serial.println(in);
+    int value = Serial.parseInt();
+//    Serial.print("Parsed: ");
+//    Serial.println(value);
+//    printVEL(value);
   }
 }
