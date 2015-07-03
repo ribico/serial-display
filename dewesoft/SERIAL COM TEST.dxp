@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DewesoftProjectSetup>
+	<ProjectSetup>
+		<FilesFolders>
+			<SetupFolder>D:\DEWESoft7\Setups\</SetupFolder>
+			<DataFolder>D:\DEWESoft7\Data\</DataFolder>
+			<ExportFolder>D:\DEWESoft7\Exports\</ExportFolder>
+		</FilesFolders>
+		<SetupModules>
+			<SetupModule ID="15" Name="Video">
+				<Default>True</Default>
+			</SetupModule>
+		</SetupModules>
+		<Math>
+			<Math Index="{E6EED39C-0959-4325-B80F-E05CC02806A5}" Name="Formula">
+				<Favourite>True</Favourite>
+			</Math>
+			<Math Index="{3A38D317-6E83-4E35-85AF-74CF77477B7E}" Name="IIR filter">
+				<Favourite>True</Favourite>
+			</Math>
+			<Math Index="{9F8B0A31-EEB4-4B4E-BB8B-777B0D13F5AA}" Name="FIR filter"></Math>
+			<Math Index="{AC5CF403-A2C7-407B-AEFB-AE9EB764A50F}" Name="Integral, derivative"></Math>
+			<Math Index="{8F8CBFEB-6DEA-4CFC-BD59-FF12F9D4CAC8}" Name="Frequency domain filter"></Math>
+			<Math Index="{4DCDE7A8-A9CB-4F78-9C68-A63D4805A128}" Name="Basic statistics">
+				<Favourite>True</Favourite>
+			</Math>
+			<Math Index="{6341A000-E4E4-46CA-ABC1-39D47254AE52}" Name="Array statistics"></Math>
+			<Math Index="{27930F83-82B4-40FC-B55D-073E4AA673E5}" Name="Time reference curve"></Math>
+			<Math Index="{94403985-5941-4B3C-85A3-66144055ADEA}" Name="Exact frequency"></Math>
+			<Math Index="{4DCFE71C-AD48-485B-9CBC-3C6B9BF2DECC}" Name="Combustion noise"></Math>
+			<Math Index="{EC178343-7D46-479A-8FD1-338554F24F3F}" Name="XY reference curve"></Math>
+			<Math Index="{9A29DF98-DDE1-465C-93BE-E6E5C8627579}" Name="Frequency domain ref. curve"></Math>
+			<Math Index="{F7B71863-00B8-409E-BC8F-ECF7A6BAC804}" Name="Latch value math"></Math>
+			<Math Index="{22F81D14-04B8-4AFE-8BBC-3F345F3F453B}" Name="Angle sensor math"></Math>
+			<Math Index="{186BB978-4148-4889-8369-F00A6E625884}" Name="Classification"></Math>
+			<Math Index="{08CF0E59-69DC-4C22-8E15-DE751A9EFBEC}" Name="Counting"></Math>
+			<Math Index="{133A73FF-F272-4C32-8FC2-6459BC4EC418}" Name="Fourier transform"></Math>
+			<Math Index="{6216720C-C702-4702-8E2E-2E461E313E43}" Name="Short-time Fourier transform"></Math>
+			<Math Index="{AE4338D2-F34E-4F45-8A3A-7A7A9B2AAE65}" Name="Octave analysis"></Math>
+			<Math Index="{619A1F3D-B283-4083-AC45-657D13A78023}" Name="Vector, matrix constant"></Math>
+			<Math Index="{12CA7C3B-6343-4093-8B85-6B3C10D20618}" Name="Scope math"></Math>
+			<Math Index="{CC1A2511-FCEC-4968-B2A7-F0CC3990C255}" Name="Envelope detection"></Math>
+			<Math Index="{73D697FB-508A-410D-9A2D-00C044BFC808}" Name="Delay channel"></Math>
+			<Math Index="{BFD60E21-6B8C-44DE-8EE3-44F1011E6083}" Name="Time-to-vector transform"></Math>
+			<Math Index="{A54B3EFE-818D-43CE-A45A-E877F43163F3}" Name="CA Ave Math"></Math>
+			<Math Index="{FB1917C8-60E4-4EAE-95EE-F24828FD25C8}" Name="Correlation"></Math>
+			<Math Index="{B114056F-F053-4EDC-B75E-028DBBCF5C57}" Name="Sine processing (COLA)"></Math>
+			<Math Index="{7B7F9692-F672-4BB9-A594-8E316DCF94DD}" Name="Strain rosette"></Math>
+			<Math Index="{6CDA6E6C-E6C6-478A-8C5F-4BDFAA51BE53}" Name="Fatigue analysis"></Math>
+			<Math Index="{8E587C3A-CB90-4A3E-8748-F0BFCCE61D96}" Name="Tracking filter"></Math>
+			<Math Index="{320E7109-BE82-4C69-96AE-53B31C8108EC}" Name="PID control"></Math>
+			<Math Index="{74E8FBB2-38BA-46BC-A56F-5F8D68078390}" Name="Cepstrum"></Math>
+			<Math Index="{931CC988-3ECA-499C-A1F7-B4BA0AAC0062}" Name="Two-sided Fourier transform"></Math>
+			<Math Index="{93C5D61D-E9E6-42EF-9511-D57D1D8D8471}" Name="Vector reference curve"></Math>
+			<Math Index="{A27B1C27-4F87-4311-B5AF-BDA3D15A6D77}" Name="Custom math"></Math>
+		</Math>
+		<Performance>
+			<AsyncDBInTime>10</AsyncDBInTime>
+		</Performance>
+		<Export>
+			<ExportProgram>10</ExportProgram>
+			<DefaultFileExport>1</DefaultFileExport>
+		</Export>
+		<Visuals>
+			<Display>
+				<ReplayMode>1</ReplayMode>
+			</Display>
+			<AnalogInFrame>
+				<Grid>
+					<Version>2</Version>
+					<Columns>
+						<VisibleColumns>14</VisibleColumns>
+						<Column Idx="0">
+							<Visible>True</Visible>
+							<Width>40</Width>
+							<SortPosition>0</SortPosition>
+						</Column>
+						<Column Idx="1">
+							<Visible>True</Visible>
+							<Width>64</Width>
+							<SortPosition>1</SortPosition>
+						</Column>
+						<Column Idx="2">
+							<Width>45</Width>
+						</Column>
+						<Column Idx="3">
+							<Width>64</Width>
+						</Column>
+						<Column Idx="4">
+							<Visible>True</Visible>
+							<Width>20</Width>
+							<SortPosition>2</SortPosition>
+						</Column>
+						<Column Idx="5">
+							<Width>64</Width>
+						</Column>
+						<Column Idx="6">
+							<Visible>True</Visible>
+							<Width>100</Width>
+							<SortPosition>3</SortPosition>
+						</Column>
+						<Column Idx="7">
+							<Width>100</Width>
+						</Column>
+						<Column Idx="8">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="9">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="10">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="11">
+							<Width>150</Width>
+						</Column>
+						<Column Idx="12">
+							<Visible>True</Visible>
+							<Width>115</Width>
+							<SortPosition>4</SortPosition>
+						</Column>
+						<Column Idx="13">
+							<Width>100</Width>
+						</Column>
+						<Column Idx="14">
+							<Visible>True</Visible>
+							<Width>100</Width>
+							<SortPosition>5</SortPosition>
+						</Column>
+						<Column Idx="15">
+							<Width>100</Width>
+						</Column>
+						<Column Idx="16">
+							<Visible>True</Visible>
+							<Width>120</Width>
+							<SortPosition>6</SortPosition>
+						</Column>
+						<Column Idx="17">
+							<Width>64</Width>
+						</Column>
+						<Column Idx="18">
+							<Width>70</Width>
+						</Column>
+						<Column Idx="19">
+							<Width>70</Width>
+						</Column>
+						<Column Idx="20">
+							<Width>70</Width>
+						</Column>
+						<Column Idx="21">
+							<Visible>True</Visible>
+							<Width>120</Width>
+							<SortPosition>7</SortPosition>
+						</Column>
+						<Column Idx="22">
+							<Visible>True</Visible>
+							<Width>40</Width>
+							<SortPosition>8</SortPosition>
+						</Column>
+						<Column Idx="23">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="24">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="25">
+							<Width>90</Width>
+						</Column>
+						<Column Idx="26">
+							<Width>64</Width>
+						</Column>
+						<Column Idx="27">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="28">
+							<Visible>True</Visible>
+							<Width>58</Width>
+							<SortPosition>9</SortPosition>
+						</Column>
+						<Column Idx="29">
+							<Visible>True</Visible>
+							<Width>130</Width>
+							<SortPosition>10</SortPosition>
+						</Column>
+						<Column Idx="30">
+							<Visible>True</Visible>
+							<Width>58</Width>
+							<SortPosition>11</SortPosition>
+						</Column>
+						<Column Idx="31">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="32">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="33">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="34">
+							<Width>75</Width>
+						</Column>
+						<Column Idx="35">
+							<Visible>True</Visible>
+							<Width>50</Width>
+							<SortPosition>12</SortPosition>
+						</Column>
+						<Column Idx="36">
+							<Width>64</Width>
+						</Column>
+						<Column Idx="37">
+							<Visible>True</Visible>
+							<Width>64</Width>
+							<SortPosition>13</SortPosition>
+						</Column>
+					</Columns>
+					<Groups></Groups>
+				</Grid>
+				<DaqActions>
+					<DaqAction ID="0">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="1">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="2"></DaqAction>
+					<DaqAction ID="3"></DaqAction>
+					<DaqAction ID="4"></DaqAction>
+					<DaqAction ID="5"></DaqAction>
+					<DaqAction ID="6">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="17">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="7">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="8">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="9">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="10">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="18"></DaqAction>
+					<DaqAction ID="23"></DaqAction>
+					<DaqAction ID="21"></DaqAction>
+					<DaqAction ID="22"></DaqAction>
+					<DaqAction ID="11"></DaqAction>
+					<DaqAction ID="12"></DaqAction>
+					<DaqAction ID="13">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="14">
+						<Enabled>True</Enabled>
+					</DaqAction>
+					<DaqAction ID="15"></DaqAction>
+					<DaqAction ID="16"></DaqAction>
+					<DaqAction ID="19"></DaqAction>
+					<DaqAction ID="20"></DaqAction>
+				</DaqActions>
+			</AnalogInFrame>
+			<SystemMonitorGrid>
+				<Grid>
+					<Columns>
+						<VisibleColumns>7</VisibleColumns>
+						<Column Idx="0">
+							<Visible>True</Visible>
+							<Width>20</Width>
+							<SortPosition>0</SortPosition>
+						</Column>
+						<Column Idx="1">
+							<Visible>True</Visible>
+							<Width>80</Width>
+							<SortPosition>1</SortPosition>
+						</Column>
+						<Column Idx="2">
+							<Width>80</Width>
+						</Column>
+						<Column Idx="3">
+							<Visible>True</Visible>
+							<Width>200</Width>
+							<SortPosition>2</SortPosition>
+						</Column>
+						<Column Idx="4">
+							<Visible>True</Visible>
+							<Width>150</Width>
+							<SortPosition>3</SortPosition>
+						</Column>
+						<Column Idx="5">
+							<Visible>True</Visible>
+							<Width>150</Width>
+							<SortPosition>4</SortPosition>
+						</Column>
+						<Column Idx="6">
+							<Visible>True</Visible>
+							<Width>100</Width>
+							<SortPosition>5</SortPosition>
+						</Column>
+						<Column Idx="7">
+							<Visible>True</Visible>
+							<Width>100</Width>
+							<SortPosition>6</SortPosition>
+						</Column>
+					</Columns>
+					<Groups></Groups>
+				</Grid>
+			</SystemMonitorGrid>
+			<ExportFrame>
+				<CAExpItems dt="bin.base64" content="bin">CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</CAExpItems>
+			</ExportFrame>
+		</Visuals>
+		<Units>
+			<SIUnitsDefaultName>Dewesoft</SIUnitsDefaultName>
+			<SIUnits>
+				<Unit Name="V">
+					<Label>V</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mV">
+					<Label>mV</Label>
+					<Case>1</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="uV">
+					<Label>uV</Label>
+					<Case>2</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kV">
+					<Label>kV</Label>
+					<Case>3</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="MV">
+					<Label>MV</Label>
+					<Case>4</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="A">
+					<Label>A</Label>
+					<Current>1</Current>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mA">
+					<Label>mA</Label>
+					<Case>2</Case>
+					<Current>1</Current>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="uA">
+					<Label>uA</Label>
+					<Case>3</Case>
+					<Current>1</Current>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kA">
+					<Label>kA</Label>
+					<Case>1</Case>
+					<Current>1</Current>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="K">
+					<Label>K</Label>
+					<Temperature>1</Temperature>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="deg.C">
+					<Label>deg.C</Label>
+					<Case>1</Case>
+					<Temperature>1</Temperature>
+					<Scale>1</Scale>
+					<Operator>1</Operator>
+					<Ref>-273.149993896484</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="°C">
+					<Label>°C</Label>
+					<Case>1</Case>
+					<Temperature>1</Temperature>
+					<Scale>1</Scale>
+					<Operator>1</Operator>
+					<Ref>-273.149993896484</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="deg.F">
+					<Label>deg.F</Label>
+					<Case>2</Case>
+					<Temperature>1</Temperature>
+					<Scale>1.79999995231628</Scale>
+					<Operator>1</Operator>
+					<Ref>-255.372222900391</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="°F">
+					<Label>°F</Label>
+					<Case>2</Case>
+					<Temperature>1</Temperature>
+					<Scale>1.79999995231628</Scale>
+					<Operator>1</Operator>
+					<Ref>-255.372222900391</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mV/V">
+					<Label>mV/V</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-1</Current>
+					<Scale>1</Scale>
+					<Operator>2</Operator>
+					<Ref>0.00100000004749745</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="um/m">
+					<Label>um/m</Label>
+					<Length>1</Length>
+					<Scale>1</Scale>
+					<Operator>2</Operator>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="N/mm2">
+					<Label>N/mm2</Label>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="N">
+					<Label>N</Label>
+					<Length>1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kN">
+					<Label>kN</Label>
+					<Case>1</Case>
+					<Length>1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kgf">
+					<Label>kgf</Label>
+					<Length>1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.101971618831158</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="lbf">
+					<Label>lbf</Label>
+					<Case>2</Case>
+					<Length>1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.224800005555153</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m">
+					<Label>m</Label>
+					<Length>1</Length>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="km">
+					<Label>km</Label>
+					<Case>1</Case>
+					<Length>1</Length>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="dm">
+					<Label>dm</Label>
+					<Case>1</Case>
+					<Length>1</Length>
+					<Scale>100</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="cm">
+					<Label>cm</Label>
+					<Case>2</Case>
+					<Length>1</Length>
+					<Scale>100</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mm">
+					<Label>mm</Label>
+					<Case>4</Case>
+					<Length>1</Length>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="um">
+					<Label>um</Label>
+					<Case>5</Case>
+					<Length>1</Length>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="μm">
+					<Label>μm</Label>
+					<Case>6</Case>
+					<Length>1</Length>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mi">
+					<Label>mi</Label>
+					<Case>8</Case>
+					<Length>1</Length>
+					<Scale>0.000621371204033494</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="ft">
+					<Label>ft</Label>
+					<Case>9</Case>
+					<Length>1</Length>
+					<Scale>3.28083992004395</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="in">
+					<Label>in</Label>
+					<Case>10</Case>
+					<Length>1</Length>
+					<Scale>0.0253999996930361</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m/s">
+					<Label>m/s</Label>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mm/s">
+					<Label>mm/s</Label>
+					<Case>1</Case>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="km/h">
+					<Label>km/h</Label>
+					<Case>2</Case>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>3.59999990463257</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kph">
+					<Label>kph</Label>
+					<Case>3</Case>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>3.59999990463257</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mi/h">
+					<Label>mi/h</Label>
+					<Case>4</Case>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>2.23693633079529</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mph">
+					<Label>mph</Label>
+					<Case>5</Case>
+					<Length>1</Length>
+					<Time>-1</Time>
+					<Scale>2.23693633079529</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m/s2">
+					<Label>m/s2</Label>
+					<Length>1</Length>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m/s^2">
+					<Label>m/s^2</Label>
+					<Case>1</Case>
+					<Length>1</Length>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m/s²">
+					<Label>m/s²</Label>
+					<Case>2</Case>
+					<Length>1</Length>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="g">
+					<Label>g</Label>
+					<Case>3</Case>
+					<Length>1</Length>
+					<Time>-2</Time>
+					<Scale>0.101971998810768</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="ga">
+					<Label>ga</Label>
+					<Case>4</Case>
+					<Length>1</Length>
+					<Time>-2</Time>
+					<Scale>0.101971998810768</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="Pa">
+					<Label>Pa</Label>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+				</Unit>
+				<Unit Name="bar">
+					<Label>bar</Label>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="mbar">
+					<Label>mbar</Label>
+					<Case>1</Case>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.00999999977648258</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="psi">
+					<Label>psi</Label>
+					<Case>2</Case>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.000145037731272168</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="Pa">
+					<Label>Pa</Label>
+					<Case>3</Case>
+					<Length>-1</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+				</Unit>
+				<Unit Name="Ohm">
+					<Label>Ohm</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-2</Current>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kOhm">
+					<Label>kOhm</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-2</Current>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="MOhm">
+					<Label>MOhm</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-2</Current>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="Ω">
+					<Label>Ω</Label>
+					<Case>1</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Current>-2</Current>
+					<Scale>1000000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="Nm">
+					<Label>Nm</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kNm">
+					<Label>kNm</Label>
+					<Case>1</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kg">
+					<Label>kg</Label>
+					<Mass>1</Mass>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="g">
+					<Label>g</Label>
+					<Case>1</Case>
+					<Mass>1</Mass>
+					<Scale>1000</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="t">
+					<Label>t</Label>
+					<Case>2</Case>
+					<Mass>1</Mass>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="lb">
+					<Label>lb</Label>
+					<Case>3</Case>
+					<Mass>1</Mass>
+					<Scale>2.20462250709534</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="deg">
+					<Label>deg</Label>
+					<Angle>1</Angle>
+					<Scale>57.2957992553711</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="rad">
+					<Label>rad</Label>
+					<Case>1</Case>
+					<Angle>1</Angle>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="Hz">
+					<Label>Hz</Label>
+					<Time>-1</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="rpm">
+					<Label>rpm</Label>
+					<Case>1</Case>
+					<Time>-1</Time>
+					<Scale>60</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="rad/s">
+					<Label>rad/s</Label>
+					<Case>2</Case>
+					<Angle>1</Angle>
+					<Time>-1</Time>
+					<Scale>6.28318405151367</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kg/s">
+					<Label>kg/s</Label>
+					<Mass>1</Mass>
+					<Time>-1</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kg/min">
+					<Label>kg/min</Label>
+					<Mass>1</Mass>
+					<Time>-1</Time>
+					<Scale>60</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kg/h">
+					<Label>kg/h</Label>
+					<Mass>1</Mass>
+					<Time>-1</Time>
+					<Scale>3600</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m3/s">
+					<Label>m3/s</Label>
+					<Length>3</Length>
+					<Time>-1</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m3/min">
+					<Label>m3/min</Label>
+					<Case>1</Case>
+					<Length>3</Length>
+					<Time>-1</Time>
+					<Scale>60</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="m3/h">
+					<Label>m3/h</Label>
+					<Case>2</Case>
+					<Length>3</Length>
+					<Time>-1</Time>
+					<Scale>3600</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="%">
+					<Label>%</Label>
+					<Scale>1</Scale>
+					<Operator>2</Operator>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="W">
+					<Label>W</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+				</Unit>
+				<Unit Name="kW">
+					<Label>kW</Label>
+					<Case>1</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+				</Unit>
+				<Unit Name="MW">
+					<Label>MW</Label>
+					<Case>2</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-3</Time>
+					<Ref>1</Ref>
+				</Unit>
+				<Unit Name="J">
+					<Label>J</Label>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="kJ">
+					<Label>kJ</Label>
+					<Case>1</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Scale>0.00100000004749745</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="MJ">
+					<Label>MJ</Label>
+					<Case>2</Case>
+					<Length>2</Length>
+					<Mass>1</Mass>
+					<Time>-2</Time>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="cd">
+					<Label>cd</Label>
+					<Light>1</Light>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="s">
+					<Label>s</Label>
+					<Time>1</Time>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="min">
+					<Label>min</Label>
+					<Time>1</Time>
+					<Scale>60</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="h">
+					<Label>h</Label>
+					<Time>1</Time>
+					<Scale>3600</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="pC">
+					<Label>pC</Label>
+					<Time>1</Time>
+					<Current>1</Current>
+					<Scale>999999995904</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+				<Unit Name="C">
+					<Label>C</Label>
+					<Case>1</Case>
+					<Time>1</Time>
+					<Current>1</Current>
+					<Scale>1</Scale>
+					<Ref>1</Ref>
+					<LogRef>1</LogRef>
+				</Unit>
+			</SIUnits>
+		</Units>
+	</ProjectSetup>
+	<Devices>
+		<OperationMode>1</OperationMode>
+		<Simulation>
+			<Device Type="AI">
+				<DaqType>MDTest</DaqType>
+				<Card Index="0"></Card>
+				<Amplifiers>
+					<Interface Type="NO_INTERFACE">
+						<Use_DEWEUSB_OFFLINE_AMPLIFIER>True</Use_DEWEUSB_OFFLINE_AMPLIFIER>
+						<Use_MSI_AMPLIFIER>True</Use_MSI_AMPLIFIER>
+					</Interface>
+					<Slot Index="0">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-ACC</Name>
+						</Amplifier>
+					</Slot>
+					<Slot Index="1">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-ACC-CNT</Name>
+						</Amplifier>
+					</Slot>
+					<Slot Index="2">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-ACC-CNT</Name>
+						</Amplifier>
+					</Slot>
+					<Slot Index="3">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-MUL</Name>
+							<InternalShunts Count="1">
+								<ShuntResistance0>100000</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="4">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-MUL</Name>
+							<InternalShunts Count="1">
+								<ShuntResistance0>100000</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="5">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-STG</Name>
+							<InternalShunts Count="1">
+								<ShuntResistance0>100000</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="6">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-STG</Name>
+							<InternalShunts Count="1">
+								<ShuntResistance0>100000</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="7">
+						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
+							<Name>SIRIUS-HV</Name>
+						</Amplifier>
+					</Slot>
+				</Amplifiers>
+			</Device>
+			<Device Type="AO">
+				<AOType>MDTest</AOType>
+				<UseHardSync>True</UseHardSync>
+			</Device>
+		</Simulation>
+	</Devices>
+	<Licensing>
+		<License ID="DWX-VEEU-WYR2-2T81">
+			<Hardwarekeys>
+				<DaqCards>4027330354</DaqCards>
+				<AOCards>001</AOCards>
+				<PluginGUIDs>{ACFD147E-5898-48D9-9F40-AB8FBD06E354}</PluginGUIDs>
+				<MACs>1E-71-D9-51-42-3D;6C-71-D9-51-42-3D;6C-71-D9-51-42-3E;60-A4-4C-09-FE-C9</MACs>
+			</Hardwarekeys>
+			<LicenseCodes></LicenseCodes>
+		</License>
+	</Licensing>
+	<Plugins>
+		<Plugin Index="{199B8A9E-32A4-49C6-A033-F31A61CDF502}" Descr="ARINC_MIL1553" Version="2.1.5">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{1A219CA0-9403-4CCF-953E-73EE14F226F0}" Descr="TestBed" Version="4.2">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{1CC6B503-CA18-422D-9A45-61AB6236C81D}" Descr="Ethernet receiver" Version="2.5">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{25DF77CE-AAC1-4E93-A76F-AFB7B72CFEF2}" Descr="Polygon" Version="2.6.1">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{2D0FE7B2-D5F8-4D96-8CFF-5C7B59B45835}" Descr="EPAD_BASE2" Version="2.1">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{4BC05A61-29E6-4138-90EF-C9E5278343A7}" Descr="FlexRay" Version="1.4">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{50A3789F-01A5-45C0-BCCE-D6AC30BC5FAB}" Descr="OBD2" Version="1.3.2">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{516CA5C8-6B21-43A4-9C26-80BB32367C5B}" Descr="J1587" Version="1.02">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{615B5968-4054-47C5-ABAB-0A2FB0986843}" Descr="xCP" Version="2.2.2">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{7A308F49-7C00-42C4-B9E6-6C81C37B4363}" Descr="PCM" Version="10.2.10">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{9699D617-8D16-41BB-809C-A84C4A26AF99}" Descr="ControlChannels" Version="2.0.0">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{98A44F94-84DB-46AB-A8FB-4E68231921CA}" Descr="Chapter 10" Version="5.5">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{9B53E988-8814-46DB-97C9-36831C311E4D}" Descr="ADMA" Version="3.5.0">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{9C17D884-C6E9-45B2-875B-B20DC15321B2}" Descr="SendMail" Version="2.0.0">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{A27F387A-FD43-4B0E-A377-6ADBC2D4135C}" Descr="Modbus" Version="1.0.6">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{A9C79CEF-3A72-40F8-9D49-36FE0BFCDF8F}" Descr="Weather station" Version="1.2">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{AAAB2B14-1146-48F9-A4A8-6E519AC1775B}" Descr="CPAD2" Version="1.10">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{ACFD147E-5898-48D9-9F40-AB8FBD06E354}" Descr="Serial Com" Version="2.0.3">
+			<Used>True</Used>
+			<Name>Serial Com</Name>
+			<Version>2.0.3</Version>
+			<TLB>630</TLB>
+			<Description>plugin for serial communication (RS232, RS485, ..)</Description>
+			<Vendor>Dewesoft</Vendor>
+			<HWSetup>
+				<HwSetupGeneral>
+					<HwSerialComDevices>
+						<NoOfItems>1</NoOfItems>
+						<ContainerRow_0 ClassName="THwSetupSerialComDevice">
+							<SerialComDevice>
+								<SerialComSetupData>
+									<ComPort>COM14</ComPort>
+									<BaudRate>br9600</BaudRate>
+									<FlowControl></FlowControl>
+								</SerialComSetupData>
+							</SerialComDevice>
+						</ContainerRow_0>
+					</HwSerialComDevices>
+				</HwSetupGeneral>
+				<SetupFormatVersion>1</SetupFormatVersion>
+			</HWSetup>
+		</Plugin>
+		<Plugin Index="{B163E355-4956-4A24-8469-7E4BDC5120F9}" Descr="AM.modbusrtu" Version="7.1.0.93">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{B75010ED-4933-49E9-B05A-FA9C8EC4EA0A}" Descr="AutoExport" Version="1.3">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{C97268C1-D171-417A-96F1-F6D131426894}" Descr="RoaDyn2000" Version="4.5">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{D97C530B-0655-45F7-8748-FC45559756FE}" Descr="DS NET" Version="4.14">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{E84E4F26-1E75-48B1-A60B-A239C195E248}" Descr="DS-IMU" Version="1.0.4">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{F30B0333-719E-47BC-BF02-F8CD8158035D}" Descr="DataManager2" Version="2.10">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{F6E4CEB9-ABAF-4ECB-A841-D888BF12D602}" Descr="Astro-Med" Version="1.4.1">
+			<Used>False</Used>
+		</Plugin>
+		<Plugin Index="{CF393762-C037-486C-A534-C75F85D28B4E}" Descr="ThermoConnector" Version="1.0">
+			<Used>False</Used>
+		</Plugin>
+	</Plugins>
+	<Computer>
+		<HDD_C_Total>100000 MB</HDD_C_Total>
+		<HDD_C_Free>41385 MB</HDD_C_Free>
+		<HDD_D_Total>264345 MB</HDD_D_Total>
+		<HDD_D_Free>152263 MB</HDD_D_Free>
+		<HDD_E_Total>264345 MB</HDD_E_Total>
+		<HDD_E_Free>152263 MB</HDD_E_Free>
+		<RAM_Total>3982 MB</RAM_Total>
+		<RAM_Free>1742 MB</RAM_Free>
+		<OS_Type>Windows 8</OS_Type>
+	</Computer>
+</DewesoftProjectSetup>
