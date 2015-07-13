@@ -253,7 +253,7 @@ void printNumber(int value, int col) {
 }
 
 void printVEL(int value) {
-  int m , c, d, u, number;
+  int m, c, d, u, number;
   number = value;
   if (number > 999) {
     m = (number - (number % 1000)) / 1000;
@@ -280,9 +280,11 @@ void printVEL(int value) {
 
   lcd.setCursor(0, 0);
   lcd.print("VEL: ");
-  printNumber(m, 4);
-  printNumber(c, 7);
+  if(m!=0) printNumber(m, 4);
+  if(c!=0) printNumber(c, 7);
   printNumber(d, 10);
-  printNumber(u, 13);
+  lcd.setCursor(13,1);
+  lcd.write(7);
+  printNumber(u, 14);
 
 }
