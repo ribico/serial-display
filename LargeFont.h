@@ -108,6 +108,18 @@ void lcdCustomSetup()
   lcd.createChar(8,bar8);
 }
 
+void custom_empty(int col)
+{
+  lcd.setCursor(col,0);
+  lcd.write(32);
+  lcd.write(32);
+  lcd.write(32);
+  lcd.setCursor(col,1);
+  lcd.write(32);
+  lcd.write(32);
+  lcd.write(32);
+}
+
 void custom0(int col)
 { // uses segments to build the number 0
   lcd.setCursor(col, 0);
@@ -280,8 +292,17 @@ void printVEL(int value) {
 
   lcd.setCursor(0, 0);
   lcd.print("VEL: ");
-  if(m!=0) printNumber(m, 4);
-  if(c!=0) printNumber(c, 7);
+
+  if (m != 0)
+    printNumber(m, 4);
+  else
+    custom_empty(4);
+
+  if ( (c != 0) || (c == 0 && m != 0) )
+    printNumber(c, 7);
+  else
+    custom_empty(7);
+
   printNumber(d, 10);
   lcd.setCursor(13,1);
   lcd.write(7);

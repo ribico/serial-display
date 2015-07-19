@@ -40,8 +40,8 @@ void loop() {
 //    float value = Serial.parseFloat();
     int value = Serial.parseInt();
 
-    Serial.print("Parsed: ");
-    Serial.println(value);
+//    Serial.print("Parsed: ");
+//    Serial.println(value);
     printVEL(value);
   }
 }
