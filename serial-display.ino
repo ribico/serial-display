@@ -1,27 +1,36 @@
 /*
 The Cuicuit:
- LCD RS pin to D12 (LCD4 -> Arduino D12)
- LCD Enable pin to D11 (LCD6 -> Arduino D11)
+ LCD RS pin to D2 (LCD4 -> Arduino D2)
+ LCD Enable pin to D3 (LCD6 -> Arduino D3)
  LCD D4 pin to D5 (LCD11 -> Arduino D5)
  LCD D5 pin to D4 (LCD12 -> Arduino D4)
- LCD D6 pin to D3 (LCD13 -> Arduino D3)
- LCD D7 pin to D2 (LCD14 -> Arduino D2)
- LCD Vee tied to a pot to control brightness (LCD 3 -> ?? )
+ LCD D6 pin to D7 (LCD13 -> Arduino D7)
+ LCD D7 pin to D6 (LCD14 -> Arduino D6)
+ LCD Vee tied to a pot to control brightness (LCD 3 -> A0 )
  LCD Vss and R/W tied to ground (LCD1 and LCD5 -> Arduino GND)
  LCD Vcc to +5V (LCD2 -> Arduino 5V)
 
  */
 
+#define CONTRAST_PIN    A0
+#define BTN1_PIN        1
+#define BTN2_PIN        0
+#define RS_LCD14_PIN    2
+#define ENABLE_LCD6_PIN 3
+#define D4_LCD11_PIN    5
+#define D5_LCD12_PIN    4
+#define D6_LCD13_PIN    7
+#define D7_LCD14_PIN    6
+
 #include <LiquidCrystal.h>
-// initialize the interface pins
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd (RS_LCD14_PIN, ENABLE_LCD6_PIN, D4_LCD11_PIN, D5_LCD12_PIN, D6_LCD13_PIN, D7_LCD14_PIN);
 
 #include "LargeFont.h"
 
-#define CONTRAST_PIN  A5
 
 
-void setup() {
+void setup()
+{
   // initialize serial:
   Serial.begin(9600);
 
@@ -30,18 +39,29 @@ void setup() {
 
   pinMode(CONTRAST_PIN, OUTPUT);
   analogWrite(CONTRAST_PIN,0);
+
+  pinMode(BTN1_PIN, INPUT);
+  pinMode(BTN2_PIN, INPUT);
 }
 
-void loop() {
-  // if there's any serial available, read it:
-  while (Serial.available() > 0) {
+void loop()
+{
+  String str1, str2;
+  
 
-    // look for the next valid integer in the incoming serial stream:
-//    float value = Serial.parseFloat();
+  while (Serial.available() > 0) 
+  {
+    str1 = Serial.readStringUntil('\n');
+    str2 = Serial.readStringUntil('\n');
     int value = Serial.parseInt();
 
-//    Serial.print("Parsed: ");
-//    Serial.println(value);
-    printVEL(value);
+    printLCDStrings(str1, str2);
+    printNumber(value);
   }
+  
+  if (digitalRead(BTN1_PIN) == LOW)
+    Serial.println("BTN1");
+
+  if (digitalRead(BTN2_PIN) == LOW)
+    Serial.println("BTN2");
 }

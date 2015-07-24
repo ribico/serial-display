@@ -264,7 +264,28 @@ void printNumber(int value, int col) {
   }
 }
 
-void printVEL(int value) {
+#define BIG_NUM_POS 7
+
+void printLCDStrings(String str1, String str2)
+{
+  lcd.setCursor(0, 0);
+  lcd.print(str1);
+  for(int i=str1.length(); i<BIG_NUM_POS; i++)
+  {
+    lcd.setCursor(i,0);
+    lcd.print(' ');
+  }
+
+  lcd.setCursor(0, 1);
+  lcd.print(str2);
+  for(int i=str2.length(); i<BIG_NUM_POS; i++)
+  {
+    lcd.setCursor(i,1);
+    lcd.print(' ');
+  }
+}
+void printNumber(int value) 
+{
   int m, c, d, u, number;
   number = value;
   if (number > 999) {
@@ -290,22 +311,24 @@ void printVEL(int value) {
 
   u = number;
 
-  lcd.setCursor(0, 0);
-  lcd.print("VEL: ");
 
+  
   if (m != 0)
-    printNumber(m, 4);
+    printNumber(m, BIG_NUM_POS);
   else
-    custom_empty(4);
+    custom_empty(BIG_NUM_POS);
 
   if ( (c != 0) || (c == 0 && m != 0) )
-    printNumber(c, 7);
+    printNumber(c, BIG_NUM_POS+3);
   else
-    custom_empty(7);
+    custom_empty(BIG_NUM_POS+3);
 
-  printNumber(d, 10);
-  lcd.setCursor(13,1);
+  printNumber(d, BIG_NUM_POS+6);
+
+  // print decimal dot
+  lcd.setCursor(BIG_NUM_POS+9,1);
   lcd.write(7);
-  printNumber(u, 14);
+  
+  printNumber(u, BIG_NUM_POS+10);
 
 }
