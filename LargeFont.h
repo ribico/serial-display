@@ -266,7 +266,7 @@ void printNumber(int value, int col) {
 
 #define BIG_NUM_POS 7
 
-void printLCDStrings(String str1, String str2)
+void printLCD_Strings(String str1, String str2)
 {
   lcd.setCursor(0, 0);
   lcd.print(str1);
@@ -284,51 +284,79 @@ void printLCDStrings(String str1, String str2)
     lcd.print(' ');
   }
 }
-void printNumber(int value) 
+
+// prints only 4 chars, + eventually the decimal separator
+void printLCD_BIG_Number(String str)
 {
-  int m, c, d, u, number;
-  number = value;
-  if (number > 999) {
-    m = (number - (number % 1000)) / 1000;
-    number = number % 1000;
-  } else {
-    m = 0;
-  }
-
-  if (number > 99) {
-    c = (number - (number % 100)) / 100;
-    number = number % 100;
-  } else {
-    c = 0;
-  }
-
-  if (number > 9) {
-    d = (number - (number % 10)) / 10;
-    number = number % 10;
-  } else {
-    d = 0;
-  }
-
-  u = number;
-
-
+  int col = BIG_NUM_POS;
+  char c = str.charAt(0);
   
-  if (m != 0)
-    printNumber(m, BIG_NUM_POS);
+  if( c == '0' )
+    custom_empty(col);
   else
-    custom_empty(BIG_NUM_POS);
+    printNumber(c-'0', col);
 
-  if ( (c != 0) || (c == 0 && m != 0) )
-    printNumber(c, BIG_NUM_POS+3);
+  col += 3;
+  c = str.charAt(1);
+
+  if( c == '0' && str.charAt(0) == '0' )
+  {
+    custom_empty(col);
+    col += 3;
+  }
+  else if( c == '.' )
+  {
+    lcd.setCursor(col, 0);
+    lcd.write(32);
+    lcd.setCursor(col, 1);
+    lcd.write(7);
+    col ++;
+  }
   else
-    custom_empty(BIG_NUM_POS+3);
-
-  printNumber(d, BIG_NUM_POS+6);
-
-  // print decimal dot
-  lcd.setCursor(BIG_NUM_POS+9,1);
-  lcd.write(7);
+  {
+    printNumber(c-'0', col);
+    col += 3;
+  }
   
-  printNumber(u, BIG_NUM_POS+10);
+  c = str.charAt(2);
 
+  if( c == '0' && str.charAt(0) == '0' && str.charAt(1) == '0' )
+  {
+    custom_empty(col);
+    col += 3;
+  }
+  else if( c == '.' )
+  {
+    lcd.setCursor(col, 0);
+    lcd.write(32);
+    lcd.setCursor(col, 1);
+    lcd.write(7);
+    col ++;
+  }
+  else
+  {
+    printNumber(c-'0', col);
+    col += 3;
+  }
+
+  c = str.charAt(3);
+  
+  if( c == '.' )
+  {
+    lcd.setCursor(col, 0);
+    lcd.write(32);
+    lcd.setCursor(col, 1);
+    lcd.write(7);
+    col ++;
+  }
+  else
+  {
+    printNumber(c-'0', col);
+    col += 3;
+  }
+
+  c = str.charAt(4);
+  printNumber(c-'0', col);
+  
 }
+

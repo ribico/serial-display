@@ -22,6 +22,9 @@ The Cuicuit:
 #define D6_LCD13_PIN    7
 #define D7_LCD14_PIN    6
 
+int giBtn1_PreviousStatus = HIGH;
+int giBtn2_PreviousStatus = HIGH;
+
 #include <LiquidCrystal.h>
 LiquidCrystal lcd (RS_LCD14_PIN, ENABLE_LCD6_PIN, D4_LCD11_PIN, D5_LCD12_PIN, D6_LCD13_PIN, D7_LCD14_PIN);
 
@@ -46,22 +49,30 @@ void setup()
 
 void loop()
 {
-  String str1, str2;
+  String str1, str2, str3;
   
 
   while (Serial.available() > 0) 
   {
     str1 = Serial.readStringUntil('\n');
     str2 = Serial.readStringUntil('\n');
-    int value = Serial.parseInt();
+    str3 = Serial.readStringUntil('\n');
+//   int value = Serial.parseInt();
 
-    printLCDStrings(str1, str2);
-    printNumber(value);
+    printLCD_Strings(str1, str3);
+//    printNumber(value);
+    printLCD_BIG_Number(str3);
   }
-  
-  if (digitalRead(BTN1_PIN) == LOW)
-    Serial.println("BTN1");
 
-  if (digitalRead(BTN2_PIN) == LOW)
+  int iBtn1_CurrentStatus = digitalRead(BTN1_PIN);
+  int iBtn2_CurrentStatus = digitalRead(BTN2_PIN);
+  
+  if (giBtn1_PreviousStatus == HIGH && iBtn1_CurrentStatus == LOW)
+    Serial.println("BTN1");
+  
+  if (giBtn2_PreviousStatus == HIGH && iBtn2_CurrentStatus == LOW)
     Serial.println("BTN2");
+
+  giBtn1_PreviousStatus = iBtn1_CurrentStatus;
+  giBtn2_PreviousStatus = iBtn2_CurrentStatus;
 }
