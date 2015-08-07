@@ -56,9 +56,10 @@
 		</Math>
 		<Performance>
 			<AsyncDBInTime>10</AsyncDBInTime>
+			<DBInTime>20</DBInTime>
 		</Performance>
 		<Export>
-			<ExportProgram>10</ExportProgram>
+			<ExportProgram>2</ExportProgram>
 			<DefaultFileExport>1</DefaultFileExport>
 		</Export>
 		<Visuals>
@@ -311,7 +312,115 @@
 			<ExportFrame>
 				<CAExpItems dt="bin.base64" content="bin">CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</CAExpItems>
 			</ExportFrame>
+			<ChannelSetup></ChannelSetup>
+			<CANFrame0>
+				<Grid>
+					<Version>2</Version>
+					<Columns>
+						<VisibleColumns>13</VisibleColumns>
+						<Column Idx="0">
+							<Visible>True</Visible>
+							<Width>20</Width>
+							<SortPosition>0</SortPosition>
+						</Column>
+						<Column Idx="1">
+							<Visible>True</Visible>
+							<Width>60</Width>
+							<SortPosition>1</SortPosition>
+						</Column>
+						<Column Idx="2">
+							<Visible>True</Visible>
+							<Width>50</Width>
+							<SortPosition>2</SortPosition>
+						</Column>
+						<Column Idx="3">
+							<Visible>True</Visible>
+							<Width>80</Width>
+							<CustomNumberFormat>%.1f</CustomNumberFormat>
+							<SortPosition>3</SortPosition>
+						</Column>
+						<Column Idx="4">
+							<Width>90</Width>
+							<CustomNumberFormat>%.1f</CustomNumberFormat>
+						</Column>
+						<Column Idx="5">
+							<Visible>True</Visible>
+							<Width>80</Width>
+							<SortPosition>4</SortPosition>
+						</Column>
+						<Column Idx="6">
+							<Width>40</Width>
+						</Column>
+						<Column Idx="7">
+							<Visible>True</Visible>
+							<Width>20</Width>
+							<SortPosition>5</SortPosition>
+						</Column>
+						<Column Idx="8">
+							<Visible>True</Visible>
+							<Width>30</Width>
+							<SortPosition>6</SortPosition>
+						</Column>
+						<Column Idx="9">
+							<Visible>True</Visible>
+							<Width>200</Width>
+							<SortPosition>7</SortPosition>
+						</Column>
+						<Column Idx="10">
+							<Visible>True</Visible>
+							<Width>40</Width>
+							<SortPosition>8</SortPosition>
+						</Column>
+						<Column Idx="11">
+							<Visible>True</Visible>
+							<Width>60</Width>
+							<CustomNumberFormat>%g</CustomNumberFormat>
+							<SortPosition>9</SortPosition>
+						</Column>
+						<Column Idx="12">
+							<Visible>True</Visible>
+							<Width>259</Width>
+							<SortPosition>10</SortPosition>
+						</Column>
+						<Column Idx="13">
+							<Visible>True</Visible>
+							<Width>60</Width>
+							<CustomNumberFormat>%g</CustomNumberFormat>
+							<SortPosition>11</SortPosition>
+						</Column>
+						<Column Idx="14">
+							<Visible>True</Visible>
+							<Width>60</Width>
+							<SortPosition>12</SortPosition>
+						</Column>
+					</Columns>
+					<Groups></Groups>
+				</Grid>
+			</CANFrame0>
+			<ListViewStyle>2</ListViewStyle>
 		</Visuals>
+		<Extensions>
+			<Math>
+				<Power></Power>
+				<OrderTracking></OrderTracking>
+				<CA>
+					<EngineTemplatePath>D:\DEWESoft7\System\X2\CAEngines\</EngineTemplatePath>
+				</CA>
+			</Math>
+			<VC>
+				<Graph3d></Graph3d>
+				<GraphXY></GraphXY>
+			</VC>
+		</Extensions>
+		<Print>
+			<Orientation>1</Orientation>
+		</Print>
+		<RecentFiles>
+			<File1>D:\DEVELOP\serial-display\dewesoft\SERIAL COM TEST.dxs</File1>
+			<File2>D:\DEWESoft7\Setups\SerialComTest_Martin.dxs</File2>
+			<File3>C:\Users\gabriele\Desktop\integral-test.dxs</File3>
+			<File4>D:\DEWESoft7\Setups\ALTA-SPACE.dxs</File4>
+		</RecentFiles>
 		<Units>
 			<SIUnitsDefaultName>Dewesoft</SIUnitsDefaultName>
 			<SIUnits>
@@ -1016,11 +1125,11 @@
 		</Units>
 	</ProjectSetup>
 	<Devices>
-		<OperationMode>1</OperationMode>
 		<Simulation>
 			<Device Type="AI">
 				<DaqType>MDTest</DaqType>
 				<Card Index="0"></Card>
+				<CustomDaq_GUID>{B2070ED7-2E4E-4180-9266-843C53D5EE67}</CustomDaq_GUID>
 				<Amplifiers>
 					<Interface Type="NO_INTERFACE">
 						<Use_DEWEUSB_OFFLINE_AMPLIFIER>True</Use_DEWEUSB_OFFLINE_AMPLIFIER>
@@ -1036,58 +1145,252 @@
 							<Name>SIRIUS-ACC-CNT</Name>
 						</Amplifier>
 					</Slot>
-					<Slot Index="2">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-ACC-CNT</Name>
-						</Amplifier>
-					</Slot>
-					<Slot Index="3">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-MUL</Name>
-							<InternalShunts Count="1">
-								<ShuntResistance0>100000</ShuntResistance0>
-							</InternalShunts>
-						</Amplifier>
-					</Slot>
-					<Slot Index="4">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-MUL</Name>
-							<InternalShunts Count="1">
-								<ShuntResistance0>100000</ShuntResistance0>
-							</InternalShunts>
-						</Amplifier>
-					</Slot>
-					<Slot Index="5">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-STG</Name>
-							<InternalShunts Count="1">
-								<ShuntResistance0>100000</ShuntResistance0>
-							</InternalShunts>
-						</Amplifier>
-					</Slot>
-					<Slot Index="6">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-STG</Name>
-							<InternalShunts Count="1">
-								<ShuntResistance0>100000</ShuntResistance0>
-							</InternalShunts>
-						</Amplifier>
-					</Slot>
-					<Slot Index="7">
-						<Amplifier Index="0" Type="DEWEUSB_OFFLINE_AMPLIFIER">
-							<Name>SIRIUS-HV</Name>
-						</Amplifier>
-					</Slot>
 				</Amplifiers>
 			</Device>
 			<Device Type="AO">
 				<AOType>MDTest</AOType>
 				<UseHardSync>True</UseHardSync>
 			</Device>
+			<Device Type="MultiDevice">
+				<SimulationMode>2</SimulationMode>
+			</Device>
 		</Simulation>
+		<RealMeasurement>
+			<Device Type="MultiDevice">
+				<Card Index="0">
+					<DeviceName>SIRIUSi</DeviceName>
+					<DeviceSerialNumber>D00609E604</DeviceSerialNumber>
+					<FirmwareVersion>4.8.6.16</FirmwareVersion>
+					<ClockMode>1</ClockMode>
+					<VCXOValue>8898</VCXOValue>
+				</Card>
+				<Synchronization>
+					<CurrentMode>3</CurrentMode>
+				</Synchronization>
+			</Device>
+			<Device Type="AI">
+				<DaqType>DEWESOFT_MD</DaqType>
+				<Card Index="0">
+					<DeviceType>SIRIUSi</DeviceType>
+					<SerialNumber>D00609E604</SerialNumber>
+					<FirmwareVersion>4.8.6.16</FirmwareVersion>
+					<AIResolution>24</AIResolution>
+					<MaxChannels>8</MaxChannels>
+					<MaxSampling>200000</MaxSampling>
+				</Card>
+				<Amplifiers>
+					<Interface Type="DEWEUSB_INTERFACE">
+						<Use_DEWEUSB_AMPLIFIER>True</Use_DEWEUSB_AMPLIFIER>
+						<Use_MSI_AMPLIFIER>True</Use_MSI_AMPLIFIER>
+					</Interface>
+					<Slot Index="0">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-ACC</Name>
+							<SerialNr>D0073B1AF4</SerialNr>
+							<Revision>1.4.0.0</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+						</Amplifier>
+					</Slot>
+					<Slot Index="1">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-ACC-CNT</Name>
+							<SerialNr>D0073B1AF3</SerialNr>
+							<Revision>1.4.0.0</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+						</Amplifier>
+					</Slot>
+					<Slot Index="2">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-STG</Name>
+							<SerialNr>D00904E24C</SerialNr>
+							<Revision>1.5.0.0</Revision>
+							<Firmware>1.17</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+							<InternalShunts Count="2">
+								<ShuntResistance0>59880</ShuntResistance0>
+								<ShuntResistance1>175000</ShuntResistance1>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="3">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-STG-M</Name>
+							<SerialNr>D0086C4003</SerialNr>
+							<Revision>2.5.0.1</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+							<InternalShunts Count="1">
+								<ShuntResistance0>59880</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="4">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-STG-S</Name>
+							<SerialNr>D00DC99E1D</SerialNr>
+							<Revision>1.1.0.0</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>08-May-13</CalDate>
+							<AdjustDate>08-May-13</AdjustDate>
+							<InternalShunts Count="1">
+								<ShuntResistance0>100000</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="5">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-MUL</Name>
+							<SerialNr>D0086C28D2</SerialNr>
+							<Revision>2.5.0.0</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+							<InternalShunts Count="1">
+								<ShuntResistance0>59880</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+					<Slot Index="6">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-HV</Name>
+							<SerialNr>D007D3A99C</SerialNr>
+							<Revision>1.3.0.0</Revision>
+							<Firmware>1.3</Firmware>
+							<CalDate>09-Apr-13</CalDate>
+							<AdjustDate>09-Apr-13</AdjustDate>
+						</Amplifier>
+					</Slot>
+					<Slot Index="7">
+						<Amplifier Index="0" Type="DEWEUSB_AMPLIFIER">
+							<Name>SIRIUS-STG-M</Name>
+							<SerialNr>D0086C5022</SerialNr>
+							<Revision>2.5.0.1</Revision>
+							<Firmware>2.0</Firmware>
+							<CalDate>08-May-13</CalDate>
+							<AdjustDate>08-May-13</AdjustDate>
+							<InternalShunts Count="1">
+								<ShuntResistance0>59880</ShuntResistance0>
+							</InternalShunts>
+						</Amplifier>
+					</Slot>
+				</Amplifiers>
+			</Device>
+			<Device Type="CNT">
+				<Card Index="0">
+					<DeviceType>SIRIUSi</DeviceType>
+					<SerialNumber>D00609E604</SerialNumber>
+					<FirmwareVersion>4.8.6.16</FirmwareVersion>
+					<MaxCNTChannels>9</MaxCNTChannels>
+					<CNTSyncCh>1</CNTSyncCh>
+				</Card>
+				<Slot Index="0">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="1">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="2">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="3">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="4">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="5">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="6">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="7">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+				<Slot Index="8">
+					<CounterType>3</CounterType>
+					<CntHWType>8</CntHWType>
+					<DICount>3</DICount>
+				</Slot>
+			</Device>
+			<Device Type="DaqOut"></Device>
+			<Device Type="CANs">
+				<CAN Name="DEWESOFT_MD">
+					<Enabled>True</Enabled>
+					<CanType>DEWESoft driver</CanType>
+					<Port Index="0">
+						<ListenOnly>True</ListenOnly>
+						<CardType>SIRIUSi</CardType>
+						<SerialNr>D00609E604</SerialNr>
+						<InterfaceName>USB</InterfaceName>
+						<TranscieverType>SN65HVD235</TranscieverType>
+					</Port>
+					<Card Index="0">
+						<SerialNumber>D00609E604</SerialNumber>
+						<FirmwareVersion>4.8.6.16</FirmwareVersion>
+					</Card>
+				</CAN>
+			</Device>
+			<Device Type="Timing">
+				<TimingType>DEWESOFT_MD</TimingType>
+			</Device>
+			<Device Type="AO">
+				<AOType>DEWESOFT_MD</AOType>
+				<UseHardSync>True</UseHardSync>
+				<Card Index="0">
+					<CardName>SIRIUSi</CardName>
+					<SerialNumber>D00609E604</SerialNumber>
+					<FirmwareVersion>4.8.6.16</FirmwareVersion>
+					<AOChannels>8</AOChannels>
+					<AOBits>24</AOBits>
+					<AORate>200000</AORate>
+				</Card>
+			</Device>
+			<Device Type="Video">
+				<Controller Index="1" Type="DirectX">
+					<Enabled>False</Enabled>
+					<Camera Index="0">
+						<HWName>USB2.0 UVC HD Webcam</HWName>
+						<Enabled>True</Enabled>
+					</Camera>
+				</Controller>
+			</Device>
+		</RealMeasurement>
+		<OperationMode>1</OperationMode>
 	</Devices>
 	<Licensing>
 		<License ID="DWX-VEEU-WYR2-2T81">
+			<Hardwarekeys>
+				<DaqCards>4027330354</DaqCards>
+				<AOCards>001</AOCards>
+				<PluginGUIDs>{ACFD147E-5898-48D9-9F40-AB8FBD06E354}</PluginGUIDs>
+				<MACs>1E-71-D9-51-42-3D;6C-71-D9-51-42-3D;6C-71-D9-51-42-3E;60-A4-4C-09-FE-C9</MACs>
+			</Hardwarekeys>
+			<LicenseCodes></LicenseCodes>
+		</License>
+		<License ID="DWX-NEZ4-DH17-WQA1">
 			<Hardwarekeys>
 				<DaqCards>4027330354</DaqCards>
 				<AOCards>001</AOCards>
@@ -1130,6 +1433,11 @@
 		</Plugin>
 		<Plugin Index="{9699D617-8D16-41BB-809C-A84C4A26AF99}" Descr="ControlChannels" Version="2.0.0">
 			<Used>False</Used>
+			<Name>ControlChannels</Name>
+			<Version>2.0.0</Version>
+			<TLB>630</TLB>
+			<Description>Generic control channels</Description>
+			<Vendor>Dewesoft</Vendor>
 		</Plugin>
 		<Plugin Index="{98A44F94-84DB-46AB-A8FB-4E68231921CA}" Descr="Chapter 10" Version="5.5">
 			<Used>False</Used>
@@ -1163,9 +1471,11 @@
 						<ContainerRow_0 ClassName="THwSetupSerialComDevice">
 							<SerialComDevice>
 								<SerialComSetupData>
-									<ComPort>COM14</ComPort>
+									<ComPort>COM19</ComPort>
 									<BaudRate>br9600</BaudRate>
-									<FlowControl></FlowControl>
+									<FlowControl>
+										<DTRFlowControl>dtrEnable</DTRFlowControl>
+									</FlowControl>
 								</SerialComSetupData>
 							</SerialComDevice>
 						</ContainerRow_0>
@@ -1201,13 +1511,13 @@
 	</Plugins>
 	<Computer>
 		<HDD_C_Total>100000 MB</HDD_C_Total>
-		<HDD_C_Free>41385 MB</HDD_C_Free>
+		<HDD_C_Free>37533 MB</HDD_C_Free>
 		<HDD_D_Total>264345 MB</HDD_D_Total>
-		<HDD_D_Free>152263 MB</HDD_D_Free>
+		<HDD_D_Free>152012 MB</HDD_D_Free>
 		<HDD_E_Total>264345 MB</HDD_E_Total>
-		<HDD_E_Free>152263 MB</HDD_E_Free>
+		<HDD_E_Free>152012 MB</HDD_E_Free>
 		<RAM_Total>3982 MB</RAM_Total>
-		<RAM_Free>1742 MB</RAM_Free>
+		<RAM_Free>1676 MB</RAM_Free>
 		<OS_Type>Windows 8</OS_Type>
 	</Computer>
 </DewesoftProjectSetup>

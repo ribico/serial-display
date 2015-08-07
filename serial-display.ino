@@ -57,10 +57,8 @@ void loop()
     str1 = Serial.readStringUntil('\n');
     str2 = Serial.readStringUntil('\n');
     str3 = Serial.readStringUntil('\n');
-//   int value = Serial.parseInt();
 
-    printLCD_Strings(str1, str3);
-//    printNumber(value);
+    printLCD_Strings(str1, str2);
     printLCD_BIG_Number(str3);
   }
 
