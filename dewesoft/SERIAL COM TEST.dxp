@@ -418,8 +418,7 @@
 		<RecentFiles>
 			<File1>D:\DEVELOP\serial-display\dewesoft\SERIAL COM TEST.dxs</File1>
 			<File2>D:\DEWESoft7\Setups\SerialComTest_Martin.dxs</File2>
-			<File3>C:\Users\gabriele\Desktop\integral-test.dxs</File3>
-			<File4>D:\DEWESoft7\Setups\ALTA-SPACE.dxs</File4>
+			<File3>D:\DEWESoft7\Setups\ALTA-SPACE.dxs</File3>
 		</RecentFiles>
 		<Units>
 			<SIUnitsDefaultName>Dewesoft</SIUnitsDefaultName>
@@ -1399,6 +1398,14 @@
 			</Hardwarekeys>
 			<LicenseCodes></LicenseCodes>
 		</License>
+		<License ID="DWX-1VD8-92PW-RWK1">
+			<Hardwarekeys>
+				<DaqCards>4027330354</DaqCards>
+				<AOCards>001</AOCards>
+				<MACs>1E-71-D9-51-42-3D;6C-71-D9-51-42-3D;6C-71-D9-51-42-3E;60-A4-4C-09-FE-C9</MACs>
+			</Hardwarekeys>
+			<LicenseCodes></LicenseCodes>
+		</License>
 	</Licensing>
 	<Plugins>
 		<Plugin Index="{199B8A9E-32A4-49C6-A033-F31A61CDF502}" Descr="ARINC_MIL1553" Version="2.1.5">
@@ -1457,10 +1464,10 @@
 		<Plugin Index="{AAAB2B14-1146-48F9-A4A8-6E519AC1775B}" Descr="CPAD2" Version="1.10">
 			<Used>False</Used>
 		</Plugin>
-		<Plugin Index="{ACFD147E-5898-48D9-9F40-AB8FBD06E354}" Descr="Serial Com" Version="2.0.3">
+		<Plugin Index="{ACFD147E-5898-48D9-9F40-AB8FBD06E354}" Descr="Serial Com" Version="2.0.6-B10">
 			<Used>True</Used>
 			<Name>Serial Com</Name>
-			<Version>2.0.3</Version>
+			<Version>2.0.6-B10</Version>
 			<TLB>630</TLB>
 			<Description>plugin for serial communication (RS232, RS485, ..)</Description>
 			<Vendor>Dewesoft</Vendor>
@@ -1471,7 +1478,7 @@
 						<ContainerRow_0 ClassName="THwSetupSerialComDevice">
 							<SerialComDevice>
 								<SerialComSetupData>
-									<ComPort>COM19</ComPort>
+									<ComPort>COM7</ComPort>
 									<BaudRate>br9600</BaudRate>
 									<FlowControl>
 										<DTRFlowControl>dtrEnable</DTRFlowControl>
@@ -1496,7 +1503,7 @@
 		<Plugin Index="{D97C530B-0655-45F7-8748-FC45559756FE}" Descr="DS NET" Version="4.14">
 			<Used>False</Used>
 		</Plugin>
-		<Plugin Index="{E84E4F26-1E75-48B1-A60B-A239C195E248}" Descr="DS-IMU" Version="1.0.4">
+		<Plugin Index="{E84E4F26-1E75-48B1-A60B-A239C195E248}" Descr="DS-IMU" Version="1.0.8">
 			<Used>False</Used>
 		</Plugin>
 		<Plugin Index="{F30B0333-719E-47BC-BF02-F8CD8158035D}" Descr="DataManager2" Version="2.10">
@@ -1508,16 +1515,19 @@
 		<Plugin Index="{CF393762-C037-486C-A534-C75F85D28B4E}" Descr="ThermoConnector" Version="1.0">
 			<Used>False</Used>
 		</Plugin>
+		<Plugin Index="{09FC95F3-18B1-41AE-A44E-DD4D0719614A}" Descr="Sound power" Version="1.6">
+			<Used>False</Used>
+		</Plugin>
 	</Plugins>
 	<Computer>
 		<HDD_C_Total>100000 MB</HDD_C_Total>
-		<HDD_C_Free>37533 MB</HDD_C_Free>
+		<HDD_C_Free>28002 MB</HDD_C_Free>
 		<HDD_D_Total>264345 MB</HDD_D_Total>
-		<HDD_D_Free>152012 MB</HDD_D_Free>
+		<HDD_D_Free>145002 MB</HDD_D_Free>
 		<HDD_E_Total>264345 MB</HDD_E_Total>
-		<HDD_E_Free>152012 MB</HDD_E_Free>
+		<HDD_E_Free>145002 MB</HDD_E_Free>
 		<RAM_Total>3982 MB</RAM_Total>
-		<RAM_Free>1676 MB</RAM_Free>
+		<RAM_Free>1878 MB</RAM_Free>
 		<OS_Type>Windows 8</OS_Type>
 	</Computer>
 </DewesoftProjectSetup>
