@@ -1,21 +1,20 @@
 /*
 The Cuicuit:
- LCD RS pin to D2 (LCD4 -> Arduino D2)
+ LCD RS pin to D2 (LCD4 -> Arduino D1)
  LCD Enable pin to D3 (LCD6 -> Arduino D3)
  LCD D4 pin to D5 (LCD11 -> Arduino D5)
  LCD D5 pin to D4 (LCD12 -> Arduino D4)
  LCD D6 pin to D7 (LCD13 -> Arduino D7)
  LCD D7 pin to D6 (LCD14 -> Arduino D6)
- LCD Vee tied to a pot to control brightness (LCD 3 -> A0 )
+ LCD Vee tied to a pot to control brightness (LCD 3 -> Arduino GND )
  LCD Vss and R/W tied to ground (LCD1 and LCD5 -> Arduino GND)
  LCD Vcc to +5V (LCD2 -> Arduino 5V)
 
  */
 
-#define CONTRAST_PIN    A0
-#define BTN1_PIN        1
-#define BTN2_PIN        0
-#define RS_LCD14_PIN    2
+#define BTN1_PIN        A0
+#define BTN2_PIN        A1
+#define RS_LCD14_PIN    1
 #define ENABLE_LCD6_PIN 3
 #define D4_LCD11_PIN    5
 #define D5_LCD12_PIN    4
@@ -40,9 +39,6 @@ void setup()
   lcdCustomSetup();
   lcd.begin(20, 2);
 
-  pinMode(CONTRAST_PIN, OUTPUT);
-  analogWrite(CONTRAST_PIN,0);
-
   pinMode(BTN1_PIN, INPUT);
   pinMode(BTN2_PIN, INPUT);
 }
@@ -50,9 +46,9 @@ void setup()
 void loop()
 {
   String str1, str2, str3;
-  
 
-  while (Serial.available() > 0) 
+
+  while (Serial.available() > 0)
   {
     str1 = Serial.readStringUntil('\n');
     str2 = Serial.readStringUntil('\n');
@@ -64,11 +60,11 @@ void loop()
 
   int iBtn1_CurrentStatus = digitalRead(BTN1_PIN);
   int iBtn2_CurrentStatus = digitalRead(BTN2_PIN);
-  
-  if (giBtn1_PreviousStatus == HIGH && iBtn1_CurrentStatus == LOW)
+
+  if (giBtn1_PreviousStatus == 1 && iBtn1_CurrentStatus == 0)
     Serial.println("BTN1");
-  
-  if (giBtn2_PreviousStatus == HIGH && iBtn2_CurrentStatus == LOW)
+
+  if (giBtn2_PreviousStatus == 1 && iBtn2_CurrentStatus == 0)
     Serial.println("BTN2");
 
   giBtn1_PreviousStatus = iBtn1_CurrentStatus;
