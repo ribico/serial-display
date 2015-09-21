@@ -14,8 +14,8 @@ The Cuicuit:
 
 #define BTN1_PIN        A0
 #define BTN2_PIN        A1
-#define RS_LCD14_PIN    1
-#define ENABLE_LCD6_PIN 3
+#define RS_LCD14_PIN    0
+#define ENABLE_LCD6_PIN 1
 #define D4_LCD11_PIN    5
 #define D5_LCD12_PIN    4
 #define D6_LCD13_PIN    7
