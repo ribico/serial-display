@@ -59,74 +59,111 @@ void setup()
   pinMode(BTN2_PIN, INPUT);
 }
 
+String str1 = "str1";
+String str2 = "str2";
+String str_num = "123.4";
+String str3 = "str3";
+String str3a = "str3a";
+String str4 = "str4";
+String str4a = "str4a";
+
 void loop()
 {
-  String str1, str2;
-  String str_num;
-  String str3, str3a, str4, str4a;
+  int iBtn1_CurrentStatus = digitalRead(BTN1_PIN);
+  int iBtn2_CurrentStatus = digitalRead(BTN2_PIN);
+  int iBtn3_CurrentStatus = digitalRead(BTN3_PIN);
+  int iBtn4_CurrentStatus = digitalRead(BTN4_PIN);
 
-//  while (Serial.available() > 0)
+  if (giBtn1_PreviousStatus == 1 && iBtn1_CurrentStatus == 0)
   {
-    int iBtn1_CurrentStatus = digitalRead(BTN1_PIN);
-    int iBtn2_CurrentStatus = digitalRead(BTN2_PIN);
-    int iBtn3_CurrentStatus = digitalRead(BTN3_PIN);
-    int iBtn4_CurrentStatus = digitalRead(BTN4_PIN);
+    Serial.println("BTN1");
+    str4 = "BTN1 PRESSED";//Serial.readStringUntil('\n');
+    str4a = "";
+  }
 
-    if (giBtn1_PreviousStatus == 1 && iBtn1_CurrentStatus == 0)
-      Serial.println("BTN1");
-
-    if (giBtn2_PreviousStatus == 1 && iBtn2_CurrentStatus == 0)
+  if (giBtn2_PreviousStatus == 1 && iBtn2_CurrentStatus == 0)
+  {
       Serial.println("BTN2");
+      str4 = "BTN2 PRESSED";//Serial.readStringUntil('\n');
+      str4a = "";
+  }
 
-    if (giBtn3_PreviousStatus == 1 && iBtn3_CurrentStatus == 0)
+  if (giBtn3_PreviousStatus == 1 && iBtn3_CurrentStatus == 0)
+  {
       Serial.println("BTN3");
+      str4 = "BTN3 PRESSED";//Serial.readStringUntil('\n');
+      str4a = "";
+  }
 
-    if (giBtn4_PreviousStatus == 1 && iBtn4_CurrentStatus == 0)
-    {
-      if (giContrastPwm < 250)
-        giContrastPwm += 25;
-      else
-        giContrastPwm = 25;
+  if (giBtn4_PreviousStatus == 1 && iBtn4_CurrentStatus == 0)
+  {
+    Serial.println("BTN4");
 
-        analogWrite(CONTRAST_PIN, giContrastPwm);
-    }
+    if (giContrastPwm < 250)
+      giContrastPwm += 25;
+    else
+      giContrastPwm = 25;
 
+      analogWrite(CONTRAST_PIN, giContrastPwm);
 
-    giBtn1_PreviousStatus = iBtn1_CurrentStatus;
-    giBtn2_PreviousStatus = iBtn2_CurrentStatus;
-    giBtn3_PreviousStatus = iBtn3_CurrentStatus;
-    giBtn4_PreviousStatus = iBtn4_CurrentStatus;
-
+      str4 = "Contrast :";//Serial.readStringUntil('\n');
+      str4a = String((int)(giContrastPwm/255.0*100.0));
+  }
 
 
-    str1 = "str1";//Serial.readStringUntil('\n');
-    str2 = "str2";//Serial.readStringUntil('\n');
-    str_num = "199.5";//Serial.readStringUntil('\n');
-    str3 = "str3";//Serial.readStringUntil('\n');
-    str3a = "str3a"; //Serial.readStringUntil('\n');
-    str4 = "PWM :";//Serial.readStringUntil('\n');
-    str4a = String((int)(giContrastPwm/255.0*100.0));//Serial.readStringUntil('\n');
+  giBtn1_PreviousStatus = iBtn1_CurrentStatus;
+  giBtn2_PreviousStatus = iBtn2_CurrentStatus;
+  giBtn3_PreviousStatus = iBtn3_CurrentStatus;
+  giBtn4_PreviousStatus = iBtn4_CurrentStatus;
 
-    printLCD_String(LEFT_STR_OFFSET, ROW1, str1);
-    refreshLCD_EmptyDigits(str1.length(), BIG_NUM_POS, ROW1);
+  if( Serial.available() > 0 ) // some string to be read
+  {
+    str1 = Serial.readStringUntil('\n');
+    str2 = Serial.readStringUntil('\n');
+    str_num = Serial.readStringUntil('\n');
+    str3 = Serial.readStringUntil('\n');
+    str3a = Serial.readStringUntil('\n');
+    str4 = Serial.readStringUntil('\n');
+    str4a = Serial.readStringUntil('\n');
+  }
 
-    printLCD_String(LEFT_STR_OFFSET, ROW2, str2);
-    refreshLCD_EmptyDigits(str2.length(), BIG_NUM_POS, ROW2);
+  // PRINT ROW1
+  printLCD_String(LEFT_STR_OFFSET, ROW1, str1);
+  refreshLCD_EmptyDigits(str1.length(), BIG_NUM_POS, ROW1);
 
-    printLCD_BIG_Number(str_num);
+  // PRINT ROW2
+  printLCD_String(LEFT_STR_OFFSET, ROW2, str2);
+  refreshLCD_EmptyDigits(str2.length(), BIG_NUM_POS, ROW2);
 
-    printLCD_String(LEFT_STR_OFFSET, ROW3, str3);
+  // PRINT BIG NUMBER
+  printLCD_BIG_Number(str_num);
+
+  // PRINT ROW3
+  printLCD_String(LEFT_STR_OFFSET, ROW3, str3);
+  if( str3a.length() > 0 )
+  {
     refreshLCD_EmptyDigits(str3.length(), RIGHT_STR_OFFSET, ROW3);
-
     printLCD_String(RIGHT_STR_OFFSET, ROW3, str3a);
     refreshLCD_EmptyDigits(str3a.length()+RIGHT_STR_OFFSET, DISP_COL_COUNT, ROW3);
-
-    printLCD_String(LEFT_STR_OFFSET, ROW4, str4);
-    refreshLCD_EmptyDigits(str4.length(), RIGHT_STR_OFFSET, ROW4);
-
-    printLCD_String(RIGHT_STR_OFFSET, ROW4, str4a);
-    refreshLCD_EmptyDigits(str4a.length()+RIGHT_STR_OFFSET+1, DISP_COL_COUNT, ROW4);
   }
+  else
+  {
+    refreshLCD_EmptyDigits(str3.length(), DISP_COL_COUNT, ROW3);
+  }
+
+  // PRINT ROW4
+  printLCD_String(LEFT_STR_OFFSET, ROW4, str4);
+  if( str4a.length() > 0 )
+  {
+    refreshLCD_EmptyDigits(str4.length(), RIGHT_STR_OFFSET, ROW4);
+    printLCD_String(RIGHT_STR_OFFSET, ROW4, str4a);
+    refreshLCD_EmptyDigits(str4a.length()+RIGHT_STR_OFFSET, DISP_COL_COUNT, ROW4);
+  }
+  else
+  {
+    refreshLCD_EmptyDigits(str4.length(), DISP_COL_COUNT, ROW4);
+  }
+
 }
 
 
