@@ -264,33 +264,15 @@ void printNumber(int value, int col) {
   }
 }
 
+
 #define BIG_NUM_POS 7
-
-void printLCD_Strings(String str1, String str2)
-{
-  lcd.setCursor(0, 0);
-  lcd.print(str1);
-  for(int i=str1.length(); i<BIG_NUM_POS; i++)
-  {
-    lcd.setCursor(i,0);
-    lcd.print(' ');
-  }
-
-  lcd.setCursor(0, 1);
-  lcd.print(str2);
-  for(int i=str2.length(); i<BIG_NUM_POS; i++)
-  {
-    lcd.setCursor(i,1);
-    lcd.print(' ');
-  }
-}
 
 // prints only 4 chars, + eventually the decimal separator
 void printLCD_BIG_Number(String str)
 {
   int col = BIG_NUM_POS;
   char c = str.charAt(0);
-  
+
   if( c == '0' )
     custom_empty(col);
   else
@@ -317,7 +299,7 @@ void printLCD_BIG_Number(String str)
     printNumber(c-'0', col);
     col += 3;
   }
-  
+
   c = str.charAt(2);
 
   if( c == '0' && str.charAt(0) == '0' && str.charAt(1) == '0' )
@@ -340,7 +322,7 @@ void printLCD_BIG_Number(String str)
   }
 
   c = str.charAt(3);
-  
+
   if( c == '.' )
   {
     lcd.setCursor(col, 0);
@@ -357,6 +339,5 @@ void printLCD_BIG_Number(String str)
 
   c = str.charAt(4);
   printNumber(c-'0', col);
-  
-}
 
+}
