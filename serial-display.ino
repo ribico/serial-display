@@ -23,13 +23,14 @@ The Cuicuit:
 #define D5_LCD12_PIN    4
 #define D6_LCD13_PIN    7
 #define D7_LCD14_PIN    6
+#define CONTRAST_PIN    9
 
 
 int giBtn1_PreviousStatus = HIGH;
 int giBtn2_PreviousStatus = HIGH;
 int giBtn3_PreviousStatus = HIGH;
 int giBtn4_PreviousStatus = HIGH;
-int giContrastPwm = 70;
+int giContrastPwm = 200;
 
 #include <LiquidCrystal.h>
 LiquidCrystal lcd (RS_LCD14_PIN, ENABLE_LCD6_PIN, D4_LCD11_PIN, D5_LCD12_PIN, D6_LCD13_PIN, D7_LCD14_PIN);
@@ -82,10 +83,12 @@ void loop()
 
     if (giBtn4_PreviousStatus == 1 && iBtn4_CurrentStatus == 0)
     {
-      if (giContrastPwm < 95)
-        giContrastPwm += 5;
+      if (giContrastPwm < 250)
+        giContrastPwm += 25;
       else
-        giContrastPwm = 0;
+        giContrastPwm = 25;
+
+        analogWrite(CONTRAST_PIN, giContrastPwm);
     }
 
 
@@ -101,8 +104,8 @@ void loop()
     str_num = "199.5";//Serial.readStringUntil('\n');
     str3 = "str3";//Serial.readStringUntil('\n');
     str3a = "str3a"; //Serial.readStringUntil('\n');
-    str4 = "PWM(5-95):";//Serial.readStringUntil('\n');
-    str4a = String(giContrastPwm);//Serial.readStringUntil('\n');
+    str4 = "PWM :";//Serial.readStringUntil('\n');
+    str4a = String((int)(giContrastPwm/255.0*100.0));//Serial.readStringUntil('\n');
 
     printLCD_String(LEFT_STR_OFFSET, ROW1, str1);
     refreshLCD_EmptyDigits(str1.length(), BIG_NUM_POS, ROW1);
