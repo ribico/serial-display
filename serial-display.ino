@@ -23,7 +23,7 @@ The Cuicuit:
 #define D5_LCD12_PIN    4
 #define D6_LCD13_PIN    7
 #define D7_LCD14_PIN    6
-#define CONTRAST_PIN    9
+#define CONTRAST_PIN    3
 
 
 int giBtn1_PreviousStatus = HIGH;
